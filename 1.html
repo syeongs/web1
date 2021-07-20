@@ -1,22 +1,14 @@
 <!doctype html>
 <html>
 <head>
+
  <title>WEB1 - HTML</title>
  <meta charset ="utf-8">
-
- <!-- Global site tag (gtag.js) - Google Analytics -->
- <script async src="https://www.googletagmanager.com/gtag/js?id=G-CL1FXSF2XV"></script>
- <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
-
-   gtag('config', 'G-CL1FXSF2XV');
- </script>
 
 </head>
 
 <body>
+
   <h1><a href="index.html">WEB</a></h1>
   <ol>
     <li><a href="1.html">HTML</a></li>
@@ -30,34 +22,51 @@
     <iframe width="560" height="315" src="https://www.youtube.com/embed/2qyG7r5LcFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </p>
 
-  목록 .. list의 앞 두자리 li.. li와 같은 항목들은 어디서 부터 어디까지 연관된지 항목인지를 경계를 짓기위한 부모 태그가 필요.. -> li는 반드시 부모 태그를 가지고 있다 => ul, ul도 반드시 자식 태그를 가지고 있다 => li <br> 이 때, ul과 ol이 있는데 ol은 ordered list이고 ul은 unordered list이다.
-  <a href="https://www.w3.org/TR/html52/" target="_blank" title="html5 specification">Hypertext Markup Language (HTML)</a> is the standard markup
-  language for <strong>creating <u>web</u> pages</strong> and web applications.
-  <br>
-  앞에있는 것을 열린 TAG 뒤에있는 것을 닫힌 TAG 라고 한다. 닫힌 태그는 /를 붙인다.
-  <p>TAG</p> : 내용의 특성을 설명
-  h1부터 h6까지는 제목(head)을 나타내는 TAG
-  새로운 줄을 나타내는 br, 줄바꿈을 나타내는 시각적인 의미만 가지고 있기에 무언가를 감쌀
-  필요가 없음
-  <br><br> <img src ="coding.jpg" width = "50%"> <br> <br>
-  태그의 이름만으로는 정보가 부족하다 -> 새로운 문법 출현
-  어떤 이미지인지를 알려주기 위한 속성(Attribute)
-  속성은 위치는 상관없음. 태그의 이름만으로 정보가 부족할 때.. 사용
+  <p>
+    html은 전체적으로 head와 body로 나뉜다.
+  </p>
+
+  <p>
+    앞에있는 것을 열린 태그, 뒤에있는 것을 닫힌 태그라고 한다. 닫힌 태그는 /를 붙인다.<br><br>
+    li 태그 : list의 앞 두자리, li와 같은 항목들은 어디서부터 어디까지 연관된 항목인지 경계를 짓기 위한 부모 태그가 필요<br>
+    ul,ol 태그 : li 태그의 부모 태그, ul,ol의 자식태그는 li 태그, ol은 ordered list, ul은 unoredered list이다.
+  </p>
+
+  <p>
+    br 태그 : 줄바꿈을 나타내는 시각적인 의미만 가지고 있기에 무언가를 감쌀 필요가 없다<br>
+    p 태그 : 단락(paragraph)이 바뀌는데 새로운 줄을 나타내면서 줄간격이 달라짐 br은 단지 줄바꿈이지만 p는 어디서 부터 어디까지 단락이다 라는 것을 표현함, css를 통해서 훨씬 정교하게 사용할 수 있다.
+  </p>
+
+  <p>
+    h1 ~ h6 태그 : 제목(head)를 나타낸다. h1이 가장 큰 제목이고 h6으로 갈 수록 폰트 크기가 작아짐<br>
+    태그의 이름만으로는 정보가 부족하다 -> 새로운 문법 출현<br>
+    어떤 이미지인지를 알려주기 위한 속성(Attribute) 등장. 위치 상관없음. 태그의 이름만으로는 정보가 부족할 때 사용<br>
+    <img src ="coding.jpg" width="560" height="315"> <br> <br>
+
+  </p>
+
+  <p>
+    a 태그 : 링크(웹페이지와 웹페이지를 이어주는 태그)<br>
+    - 배가 닻을 내리듯 다른 웹페이지에 anchor를 내리는 것. 이 때 어디다 닻을 내려야 하는지 설명해주는 속성 href(hypertext reference)를 사용해 링크를 검.<br>
+    target 속성을 이용하면 빈 탭에서 링크가 열리게 할 수 있으며 title 속성을 달아주면 링크에 대한 설명을 툴팁으로 띄울 수 있다.<br><br>
+
+    <a href="https://www.w3.org/TR/html52/" target="_blank" title="html5 specification">Hypertext Markup Language (HTML)</a> is the standard markup
+    language for <strong>creating <u>web</u> pages</strong> and web applications.
+    <br>
+
+    strong 태그 : bold
+    u 태그 : underline
+
+  </p>
+
+  <p>
+    title 태그 : 브라우저 탭에 보이는 웹페이지의 제목을 만들어준다.<br>
+    meat 태그 : 웹 브라우저보고 utf-8 방식으로 읽어라! 라고 명령<br>
+    -> utf-8 방식으로 저장한 파일 : 웹 브라우저가 utf-8로 열어줘야 깨지는 문자 없이 잘 표현됨.<br>
+    doctype : 그냥 관용표현<br>
+  </p>
 
 
-  <p> p는 단락(paragraph)이 바뀌는데 새로운 줄을 나타내면서 </p> 줄간격이 달라짐
-  br은 단지 줄바꿈이지만 p는 어디서 부터 어디까지가 단락이다 라는 것을 표현해줄 수 있음
-  <br>css를 통해서 훨씬 정교하게 사용할 수 있음.
-
-  title 태그는 브라우저 탭에 보이는 웹페이지의 제목을 만들어준다.
-  utf-8방식으로 저장한 파일 : 웹 브라우저가 utf-8로 열어줘야 깨지는 문자가 없이 잘 표현
-  meat 태그는 웹 브라우저보고 utf-8 방식으로 읽어라!라고 명령
-  doctype은 그냥 관용표현
-
-  a 태그는 링크(웹페이지와 웹페이지를 이어주는 태그)<br>
-  - 배가 닻을 내리듯 다른 웹페이지에 anchor를 내리는 것이다.
-  이 때 어디다 닻을 내려야 하는지 설명해주는 속성 href(hypertext reference)를 사용해 링크를 검
-  target 속성을 이용하면 빈 탭에서 링크가 열리게 할 수 있으며 title 속성을 달아주면 링크에 대한 설명을 툴팁으로 띄울 수 있다.
 
   <p>
   댓글 기능을 추가할 수 있는 서비스
@@ -67,6 +76,7 @@
   </ol>
   채팅 기능 추가할 수 있는 서비스<br>
   <a href "https://www.tawk.to"> tawk </a>
+
   </p>
   <p>
 
@@ -116,7 +126,7 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
-https://analytics.google.com/analytics/web/#/report-home/a117502141w174220738p173453287
+
 
 
 
